@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapin Go</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-icon">
+        <img src="img/logo.png" alt="Logo Chapin Go" class="logo-header">
+        </div>
+
+        <div>
+          <div class="brand-title">Chapin Go</div>
+          <div class="brand-subtitle">Digitaliza. Conecta. Vende.</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto" class="btn-nav">Diagnóstico sin costo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-badge">Soluciones digitales para pequeños negocios en Guatemala</div>
+
+          <h1>
+            Tu negocio puede verse más <span>profesional</span>, vender mejor y crecer en digital.
+          </h1>
+
+          <p class="main-text">
+            En Chapin Go ayudamos a emprendedores y negocios locales a modernizar su forma de vender con WhatsApp Business, catálogos QR, pagos digitales y presencia en redes sociales.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn-primary">Diagnóstico sin costo</a>
+            <a href="#servicios" class="btn-secondary">Ver servicios</a>
+          </div>
+
+          <div class="mini-cards">
+            <div class="mini-card">
+              <img src="img/escaner.png" alt="Icono QR" class="mini-icon">
+              <strong>QR</strong>
+              <p>Catálogos y menús digitales</p>
+            </div>
+            <div class="mini-card">
+                <img src="img/whatsapp.png" alt="Icono QR" class="mini-icon">
+              <strong>WA</strong>
+              <p>Ventas por WhatsApp</p>
+            </div>
+            <div class="mini-card">
+                <img src="img/soporte.png" alt="Icono QR" class="mini-icon">
+              <strong>+</strong>
+              <p>Pagos y soporte digital</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-inner">
+            <div class="hero-panel-top">Chapin Go</div>
+            <h2>Digitaliza. Conecta. Vende.</h2>
+            <p class="desc">
+              Una solución moderna y accesible para que los pequeños negocios mejoren su atención, sus ventas y su imagen digital.
+            </p>
+
+            <div class="panel-features">
+              <div class="panel-box">
+                <h4>Atención más ordenada</h4>
+                <p>Mensajes, respuestas y seguimiento desde un canal más profesional.</p>
+              </div>
+              <div class="panel-box">
+                <h4>Más confianza</h4>
+                <p>Imagen moderna para que tus clientes compren con mayor seguridad.</p>
+              </div>
+              <div class="panel-box full">
+                <h4>Implementación simple</h4>
+                <p>Soluciones fáciles de adoptar, sin procesos técnicos complicados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          <!-- Categorías -->
+<div class="categories-grid">
+  <div class="category-item" onclick="openCatalog('tiendas')">
+    <img src="img/tienda.png" alt="Tiendas" class="category-icon">
+    <span>Tiendas</span>
+  </div>
+  <div class="category-item" onclick="openCatalog('restaurantes')">
+    <img src="img/restaurante.png" alt="Restaurantes" class="category-icon">
+    <span>Restaurantes</span>
+  </div>
+  <div class="category-item" onclick="openCatalog('emprendimientos')">
+    <img src="img/emprendimiento.png" alt="Emprendimientos" class="category-icon">
+    <span>Emprendimientos</span>
+  </div>
+  <div class="category-item" onclick="openCatalog('ventas')">
+    <img src="img/venta.png" alt="Ventas en línea" class="category-icon">
+    <span>Ventas en línea</span>
+  </div>
+</div>
+
+<!-- Modal Tiendas -->
+<div id="catalog-tiendas" class="catalog-modal">
+  <div class="catalog-content">
+    <span class="close" onclick="closeCatalog('tiendas')">&times;</span>
+    <h3>Catálogo de Tiendas</h3>
+    <div class="catalog-grid">
+      <img src="img/siman.png" alt="Producto 1">
+      <img src="img/tiendas_max.png" alt="Producto 2">
+      <img src="img/gnc.png" alt="Producto 3">
+    </div>
+  </div>
+</div>
+
+<!-- Modal Restaurantes -->
+<div id="catalog-restaurantes" class="catalog-modal">
+  <div class="catalog-content">
+    <span class="close" onclick="closeCatalog('restaurantes')">&times;</span>
+    <h3>Catálogo de Restaurantes</h3>
+    <div class="catalog-grid">
+      <img src="img/campero.png" alt="Plato 1">
+      <img src="img/sanmartin.png" alt="Plato 2">
+      <img src="img/mcdonalds.png" alt="Plato 3">
+    </div>
+  </div>
+</div>
+
+<!-- Modal Emprendimientos -->
+<div id="catalog-emprendimientos" class="catalog-modal">
+  <div class="catalog-content">
+    <span class="close" onclick="closeCatalog('emprendimientos')">&times;</span>
+    <h3>Catálogo de Emprendimientos</h3>
+    <div class="catalog-grid">
+      <img src="img/ecofiltro.png" alt="Emprendimiento 1">
+      <img src="img/traeguate.png" alt="Emprendimiento 2">
+      <img src="img/mariasguate.png" alt="Emprendimiento 3">
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ventas en línea -->
+<div id="catalog-ventas" class="catalog-modal">
+  <div class="catalog-content">
+    <span class="close" onclick="closeCatalog('ventas')">&times;</span>
+    <h3>Catálogo de Ventas en línea</h3>
+    <div class="catalog-grid">
+      <img src="img/kemik.png" alt="Venta 1">
+      <img src="img/pacifiko.png" alt="Venta 2">
+      <img src="img/mercado-libre.png" alt="Venta 3">
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="block">
+      <div class="container">
+        <p class="title-label">Servicios</p>
+        <h2 class="section-title">Todo lo que necesita un pequeño negocio para verse y vender mejor.</h2>
+        <p class="section-desc">
+          Diseñamos soluciones simples, funcionales y accesibles para que el paso a lo digital sea una oportunidad de crecimiento, no una complicación.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="img/laboral.png" alt="Marketing Icon" class="service-icon">
+            <div class="service-tag">Impulsa tu marca</div>
+            <h3>Marketing Digital</h3>
+            <p>Impulsamos tu negocio con redes sociales, campañas locales y una presencia digital profesional.</p>
+            <ul>
+              <li><span class="dot"></span><span>Contenido para redes</span></li>
+              <li><span class="dot"></span><span>Posicionamiento local</span></li>
+              <li><span class="dot"></span><span>Campañas promocionales</span></li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <img src="img/compra-en-linea.png" alt="Marketing Icon" class="service-icon">
+            <div class="service-tag">Vende fácil</div>
+            <h3>Ventas por WhatsApp</h3>
+            <p>Convertimos WhatsApp en un canal de ventas ordenado, rápido y confiable para tus clientes.</p>
+            <ul>
+              <li><span class="dot"></span><span>Mensajes automatizados</span></li>
+              <li><span class="dot"></span><span>Atención más ágil</span></li>
+              <li><span class="dot"></span><span>Mejor experiencia de compra</span></li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <img src="img/escaneo-de-codigo-qr.png" alt="Marketing Icon" class="service-icon">
+            <div class="service-tag">Moderniza tu negocio</div>
+            <h3>Catálogos y Menús QR</h3>
+            <p>Creamos catálogos y menús digitales para que tus productos se vean modernos, claros y accesibles.</p>
+            <ul>
+              <li><span class="dot"></span><span>Diseño atractivo</span></li>
+              <li><span class="dot"></span><span>Acceso por código QR</span></li>
+              <li><span class="dot"></span><span>Actualización sencilla</span></li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <img src="img/billetera-digital.png" alt="Marketing Icon" class="service-icon">
+            <div class="service-tag">Cobra seguro</div>
+            <h3>Pagos Digitales</h3>
+            <p>Facilitamos la integración de métodos de pago digitales para mejorar seguridad y eficiencia.</p>
+            <ul>
+              <li><span class="dot"></span><span>Links de pago</span></li>
+              <li><span class="dot"></span><span>Cobros más rápidos</span></li>
+              <li><span class="dot"></span><span>Más confianza para el cliente</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <p class="label">Impulsa tu negocio</p>
+            <h2>Empieza con una presencia digital más fuerte y más profesional.</h2>
+            <p>
+              Desde un catálogo QR hasta ventas por WhatsApp y pagos digitales, te ayudamos a dar el siguiente paso sin complicarte.
+            </p>
+          </div>
+
+          <a href="#contacto" class="btn-white">Hablar con Chapin Go</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="aliados">
+  <div class="container text-center">
+    <h2>Aliados y Marcas</h2>
+    <p>Trabajamos junto a empresas que impulsan la digitalización en Guatemala.</p>
+    <div class="aliados-grid">
+      <img src="img/mastercard.png" alt="Mastercard">
+      <img src="img/visa.png" alt="Visa">
+      <img src="img/zigi.png" alt="Zigi">
+      <img src="img/paypal.png" alt="PayPal">
+      <img src="img/banrural.png" alt="PayPal">
+      <img src="img/banco_industrial.png" alt="Bi">
+    </div>
+  </div>
+</section>
+
+    <section id="contacto" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <p class="title-label">Contacto</p>
+          <h2>Solicita tu diagnóstico digital.</h2>
+          <p>
+            Cuéntanos sobre tu negocio y te mostramos cómo podrías empezar a vender de una forma más moderna, clara y confiable.
+          </p>
+
+          <div class="info-boxes">
+            <div class="info-box"><strong>Ideal para:</strong> pequeños negocios, emprendimientos, tiendas y restaurantes.</div>
+            <div class="info-box"><strong>Enfoque:</strong> soluciones prácticas, accesibles y fáciles de adoptar.</div>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu nombre">
+            </div>
+
+            <div class="form-group">
+              <label>Negocio</label>
+              <input type="text" placeholder="Nombre de tu negocio">
+            </div>
+
+            <div class="form-group">
+              <label>WhatsApp</label>
+              <input type="text" placeholder="Tu número">
+            </div>
+
+            <div class="form-group">
+              <label>Correo</label>
+              <input type="email" placeholder="Tu correo">
+            </div>
+          </div>
+
+          <div class="form-group full">
+            <label>¿Qué necesitas digitalizar?</label>
+            <textarea placeholder="Cuéntanos si necesitas catálogo QR, WhatsApp Business, pagos digitales, redes sociales o apoyo completo."></textarea>
+          </div>
+
+          <button type="button" class="submit-btn">Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Chapin Go</strong>
+        <span>Digitaliza. Conecta. Vende.</span>
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
